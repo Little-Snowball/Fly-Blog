@@ -1,0 +1,27 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/blog_course_design?useUnicode=true&characterEncoding=utf8&serverTimezone=Asia/Shanghai&createDatabaseIfNotExist=true
+    username: root
+    password: your_password
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+  jackson:
+    time-zone: Asia/Shanghai
+
+app:
+  jwt-secret: your-jwt-secret-change-this
+  jwt-expiration-ms: 86400000
+  cors-origin: http://localhost:5173
+
+openai:
+  base-url: https://api.deepseek.com
+  api-key: your-api-key-here
+  model: deepseek-v4-flash

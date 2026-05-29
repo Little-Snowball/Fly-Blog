@@ -1,0 +1,14 @@
+node_modules/
+**/node_modules/
+dist/
+target/
+**/target/
+.idea/
+.vscode/
+*.iml
+*.log
+*.jar
+*.class
+.env
+.env.local
+application.yml
